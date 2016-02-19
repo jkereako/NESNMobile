@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="g7M-mI-wn2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--New England Patriots-->
+        <scene sceneID="rMh-2F-k5T">
+            <objects>
+                <viewController title="New England Patriots" id="OMO-HB-yEE" customClass="NESNTimelineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qm9-uQ-xEf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="110" sectionHeaderHeight="10" sectionFooterHeight="10" id="WZw-RM-z4j">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="Cell" rowHeight="110" id="DJJ-Xk-tHW" customClass="TimelineTableViewCell">
+                                        <rect key="frame" x="0.0" y="113.5" width="320" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DJJ-Xk-tHW" id="tTk-3V-9BL">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="109.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="New England Patriots" id="gLM-r8-aBM">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Sox-Yankees Live: Yanks Roll To 8-1 Win In First Meeting Of Spring Training" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="All-G0-TRb">
+                                                    <rect key="frame" x="68" y="0.0" width="198.5" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59 minutes ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a84-vi-1mg">
+                                                    <rect key="frame" x="68" y="90" width="185" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIVE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rHm-oJ-HYj">
+                                                    <rect key="frame" x="68" y="90" width="42" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailTextLabel" destination="a84-vi-1mg" id="4FW-4y-xA2"/>
+                                            <outlet property="extraTextLabel" destination="rHm-oJ-HYj" id="jH0-S2-0A6"/>
+                                            <outlet property="imageView" destination="gLM-r8-aBM" id="DRT-n9-tgT"/>
+                                            <outlet property="textLabel" destination="All-G0-TRb" id="6Gd-cw-EX2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="OMO-HB-yEE" id="gAo-LO-NMA"/>
+                                    <outlet property="delegate" destination="OMO-HB-yEE" id="pRh-lb-5VO"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" id="GnZ-h5-zmM" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="468" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New England Patriots News" id="iAT-RD-cwy"/>
+                    <connections>
+                        <outlet property="aTableView" destination="WZw-RM-z4j" id="qOB-dS-xHD"/>
+                        <outlet property="bottomBanner" destination="GnZ-h5-zmM" id="9Y3-hW-CWH"/>
+                        <outlet property="view" destination="Qm9-uQ-xEf" id="1fU-M1-G4C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phK-GI-I7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="273"/>
+        </scene>
+        <!--Top Stories-->
+        <scene sceneID="tDE-4b-Kcw">
+            <objects>
+                <navigationController title="Top Stories" definesPresentationContext="YES" id="qeE-7F-i3k" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Home Tab Bar Item" id="t60-HX-FVD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Ug-ve-BVb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.023529414087533951" green="0.25882354378700256" blue="0.46274513006210327" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="1" vertical="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hzf-Vz-J0Z" kind="relationship" relationship="rootViewController" id="5rP-xJ-HDG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tmD-HV-mMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="-1675"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UXZ-vr-lhf">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="g7M-mI-wn2" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KYu-iI-nTT">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="tintColor" red="0.023529414089999999" green="0.2588235438" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="selectedImageTintColor" red="0.023529414089999999" green="0.2588235438" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qeE-7F-i3k" kind="relationship" relationship="viewControllers" id="qgm-MI-6Zx"/>
+                        <segue destination="2p2-N1-bVM" kind="relationship" relationship="viewControllers" id="jnU-pA-KqM"/>
+                        <segue destination="xGF-Kn-lVc" kind="relationship" relationship="viewControllers" id="nrR-s1-a16"/>
+                        <segue destination="sjG-hU-Sx7" kind="relationship" relationship="viewControllers" id="7KB-fH-TOm"/>
+                        <segue destination="jN6-np-dC6" kind="relationship" relationship="viewControllers" id="JR1-ML-hCA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhf-hq-8hC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30" y="1"/>
+        </scene>
+        <!--Boston Bruins-->
+        <scene sceneID="Xnq-Wf-jLd">
+            <objects>
+                <navigationController title="Boston Bruins" definesPresentationContext="YES" id="xGF-Kn-lVc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bruins" image="Boston Bruins Tab Bar Item" id="GrY-b6-Jdi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7ek-uL-pkE">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.023529414089999999" green="0.2588235438" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="1" vertical="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rHF-5a-xJV" kind="relationship" relationship="rootViewController" id="Nl7-sj-MhB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VcD-bY-n7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="-379"/>
+        </scene>
+        <!--New England Patriots-->
+        <scene sceneID="W0v-bU-PP3">
+            <objects>
+                <navigationController title="New England Patriots" definesPresentationContext="YES" id="sjG-hU-Sx7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Patriots" image="New England Patriots Tab Bar Item" id="hrl-rt-sy7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kdt-Ea-iId">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.023529414089999999" green="0.2588235438" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="1" vertical="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OMO-HB-yEE" kind="relationship" relationship="rootViewController" id="NYt-yd-f4O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vrz-M1-BlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="273"/>
+        </scene>
+        <!--Boston Celtics-->
+        <scene sceneID="Ui2-Y4-RxY">
+            <objects>
+                <navigationController title="Boston Celtics" definesPresentationContext="YES" id="jN6-np-dC6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Celtics" image="Boston Celtics Tab Bar Item" id="xVE-FZ-hO3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zL8-nw-2L8">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.023529414089999999" green="0.2588235438" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="1" vertical="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mAs-QW-Swk" kind="relationship" relationship="rootViewController" id="mmI-0G-aLV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Evm-2E-5IB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="981"/>
+        </scene>
+        <!--Top Stories-->
+        <scene sceneID="s0V-YV-wey">
+            <objects>
+                <viewController title="Top Stories" id="Hzf-Vz-J0Z" customClass="NESNTimelineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9L-75-ExU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="110" sectionHeaderHeight="10" sectionFooterHeight="10" id="n7w-id-BOy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="Cell" rowHeight="110" id="N9b-hM-98g" customClass="TimelineTableViewCell">
+                                        <rect key="frame" x="0.0" y="113.5" width="320" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N9b-hM-98g" id="Y7f-6z-h0L">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="109.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UITableViewCell Placeholder" id="wfZ-3E-EBU">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Sox-Yankees Live: Yanks Roll To 8-1 Win In First Meeting Of Spring Training" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Y0-rl-GlI">
+                                                    <rect key="frame" x="68" y="0.0" width="219" height="80.5"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59 minutes ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QtR-dB-eMl">
+                                                    <rect key="frame" x="68" y="88" width="219" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIVE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nfl-Xz-NRR">
+                                                    <rect key="frame" x="68" y="88" width="219" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailTextLabel" destination="QtR-dB-eMl" id="ywO-tb-Gcf"/>
+                                            <outlet property="extraTextLabel" destination="nfl-Xz-NRR" id="vKd-6d-eWc"/>
+                                            <outlet property="imageView" destination="wfZ-3E-EBU" id="JQp-GZ-Kyf"/>
+                                            <outlet property="textLabel" destination="8Y0-rl-GlI" id="R7a-q1-KqG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hzf-Vz-J0Z" id="cBH-ue-c8G"/>
+                                    <outlet property="delegate" destination="Hzf-Vz-J0Z" id="cvm-n9-Iuk"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" id="Rld-Za-0Ep" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="468" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NESN Mobile" id="PN2-NG-HFb"/>
+                    <connections>
+                        <outlet property="aTableView" destination="n7w-id-BOy" id="0Fi-27-xzT"/>
+                        <outlet property="bottomBanner" destination="Rld-Za-0Ep" id="WYN-uy-hEO"/>
+                        <outlet property="view" destination="q9L-75-ExU" id="7AG-DJ-SQb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="blc-3O-sOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="-1675"/>
+        </scene>
+        <!--Boston Celtics-->
+        <scene sceneID="g0L-F4-ALA">
+            <objects>
+                <viewController title="Boston Celtics" id="mAs-QW-Swk" customClass="NESNTimelineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PDB-kk-C7o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="110" sectionHeaderHeight="10" sectionFooterHeight="10" id="5SS-82-zsO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="Cell" rowHeight="110" id="l9Z-st-FLp" customClass="TimelineTableViewCell">
+                                        <rect key="frame" x="0.0" y="113.5" width="320" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l9Z-st-FLp" id="SGg-pA-1vY">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="109.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boston Celtics" id="Tk2-rj-lDB">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Sox-Yankees Live: Yanks Roll To 8-1 Win In First Meeting Of Spring Training" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tCV-mA-8gr">
+                                                    <rect key="frame" x="68" y="-0.5" width="218.5" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59 minutes ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T0M-Rg-kyH">
+                                                    <rect key="frame" x="68" y="88" width="218.5" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIVE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OP2-zv-4FE">
+                                                    <rect key="frame" x="68" y="88" width="219" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailTextLabel" destination="T0M-Rg-kyH" id="c6x-ai-IXr"/>
+                                            <outlet property="extraTextLabel" destination="OP2-zv-4FE" id="zU0-aa-oag"/>
+                                            <outlet property="imageView" destination="Tk2-rj-lDB" id="vVP-9b-8ul"/>
+                                            <outlet property="textLabel" destination="tCV-mA-8gr" id="R0V-SP-m1D"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mAs-QW-Swk" id="grr-DX-VDW"/>
+                                    <outlet property="delegate" destination="mAs-QW-Swk" id="Nkx-y8-LfU"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" id="Ukh-bP-2aP" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="468" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Boston Celtics News" id="vOn-lf-hSL"/>
+                    <connections>
+                        <outlet property="aTableView" destination="5SS-82-zsO" id="C1o-xh-MTi"/>
+                        <outlet property="bottomBanner" destination="Ukh-bP-2aP" id="TlA-Om-l8L"/>
+                        <outlet property="view" destination="PDB-kk-C7o" id="mRz-hB-X2l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeL-Gg-rhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="981"/>
+        </scene>
+        <!--Boston Bruins-->
+        <scene sceneID="EKG-Rn-E66">
+            <objects>
+                <viewController title="Boston Bruins" id="rHF-5a-xJV" customClass="NESNTimelineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g6y-u4-1mb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="110" sectionHeaderHeight="10" sectionFooterHeight="10" id="HEl-yS-An5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="Cell" rowHeight="110" id="yHh-mT-6rp" customClass="TimelineTableViewCell">
+                                        <rect key="frame" x="0.0" y="113.5" width="320" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yHh-mT-6rp" id="RTs-F0-g8P">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="109.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boston Bruins" id="z0S-d4-mND">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Sox-Yankees Live: Yanks Roll To 8-1 Win In First Meeting Of Spring Training" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UtR-Ef-KuK">
+                                                    <rect key="frame" x="68" y="0.0" width="219" height="80.5"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59 minutes ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Unk-sb-hsI">
+                                                    <rect key="frame" x="68" y="88" width="219" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIVE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xZv-QN-OZU">
+                                                    <rect key="frame" x="68" y="88" width="219" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailTextLabel" destination="Unk-sb-hsI" id="Hhn-C4-Ujc"/>
+                                            <outlet property="extraTextLabel" destination="xZv-QN-OZU" id="Xd8-Ll-0oB"/>
+                                            <outlet property="imageView" destination="z0S-d4-mND" id="d96-Lw-BFI"/>
+                                            <outlet property="textLabel" destination="UtR-Ef-KuK" id="Gy9-na-6vX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rHF-5a-xJV" id="zKi-Bj-ePw"/>
+                                    <outlet property="delegate" destination="rHF-5a-xJV" id="S8h-ea-KIP"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" id="hfr-lO-rTa" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="468" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Boston Bruins News" id="u31-lP-4hs"/>
+                    <connections>
+                        <outlet property="aTableView" destination="HEl-yS-An5" id="A7f-4v-eo0"/>
+                        <outlet property="bottomBanner" destination="hfr-lO-rTa" id="qGT-Wf-VyG"/>
+                        <outlet property="view" destination="g6y-u4-1mb" id="0qO-EX-4zF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fT5-Bx-5gi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="-379"/>
+        </scene>
+        <!--Boston Red Sox-->
+        <scene sceneID="17j-g1-fK9">
+            <objects>
+                <navigationController title="Boston Red Sox" definesPresentationContext="YES" id="2p2-N1-bVM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Red Sox" image="Boston Red Sox Tab Bar Item" id="E2A-Lx-W00"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wWl-8W-heY">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.023529414089999999" green="0.2588235438" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="1" vertical="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JxV-LU-3Ys" kind="relationship" relationship="rootViewController" id="8DZ-qa-jkP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="okn-vA-CGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="-1027"/>
+        </scene>
+        <!--Boston Red Sox-->
+        <scene sceneID="fHK-bl-cj2">
+            <objects>
+                <viewController title="Boston Red Sox" id="JxV-LU-3Ys" customClass="NESNTimelineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V1J-Do-3Zr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="110" sectionHeaderHeight="10" sectionFooterHeight="10" id="brC-Xp-WHZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="Cell" rowHeight="110" id="07X-6H-SWg" customClass="TimelineTableViewCell">
+                                        <rect key="frame" x="0.0" y="113.5" width="320" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="07X-6H-SWg" id="4i1-rJ-8Sj">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="109.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boston Red Sox" id="6Ig-Xc-yBI">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Sox-Yankees Live: Yanks Roll To 8-1 Win In First Meeting Of Spring" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7O2-L9-IvW">
+                                                    <rect key="frame" x="68" y="0.0" width="219" height="80.5"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59 minutes ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cnh-l1-giW">
+                                                    <rect key="frame" x="68" y="88" width="219" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIVE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CpT-P6-grN">
+                                                    <rect key="frame" x="68" y="88" width="219" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailTextLabel" destination="cnh-l1-giW" id="Vao-HF-mBb"/>
+                                            <outlet property="extraTextLabel" destination="CpT-P6-grN" id="1EY-WZ-09g"/>
+                                            <outlet property="imageView" destination="6Ig-Xc-yBI" id="IcX-ua-BcM"/>
+                                            <outlet property="textLabel" destination="7O2-L9-IvW" id="BX4-YN-ep0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JxV-LU-3Ys" id="Ccm-2A-Px4"/>
+                                    <outlet property="delegate" destination="JxV-LU-3Ys" id="XBK-QF-Vhl"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" id="IWd-CA-ifA" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="468" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Boston Red Sox News" id="vcE-xJ-CMf"/>
+                    <connections>
+                        <outlet property="aTableView" destination="brC-Xp-WHZ" id="KuT-bL-m5r"/>
+                        <outlet property="bottomBanner" destination="IWd-CA-ifA" id="fGs-79-F3l"/>
+                        <outlet property="view" destination="V1J-Do-3Zr" id="Nhi-aw-2ZT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1o-DG-saR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="-1027"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Boston Bruins" width="250" height="250"/>
+        <image name="Boston Bruins Tab Bar Item" width="30" height="30"/>
+        <image name="Boston Celtics" width="250" height="250"/>
+        <image name="Boston Celtics Tab Bar Item" width="30" height="30"/>
+        <image name="Boston Red Sox" width="250" height="250"/>
+        <image name="Boston Red Sox Tab Bar Item" width="30" height="30"/>
+        <image name="Home Tab Bar Item" width="30" height="30"/>
+        <image name="New England Patriots" width="250" height="250"/>
+        <image name="New England Patriots Tab Bar Item" width="30" height="30"/>
+        <image name="UITableViewCell Placeholder" width="250" height="250"/>
+    </resources>
+    <color key="tintColor" red="0.023529414089999999" green="0.2588235438" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+</document>

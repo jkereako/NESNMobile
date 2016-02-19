@@ -1,0 +1,188 @@
+
+// To check if a library is compiled with CocoaPods you
+// can use the `COCOAPODS` macro definition which is
+// defined in the xcconfigs so it is available in
+// headers also when they are imported in the client
+// project.
+
+
+// AFIncrementalStore
+#define COCOAPODS_POD_AVAILABLE_AFIncrementalStore
+#define COCOAPODS_VERSION_MAJOR_AFIncrementalStore 0
+#define COCOAPODS_VERSION_MINOR_AFIncrementalStore 5
+#define COCOAPODS_VERSION_PATCH_AFIncrementalStore 1
+
+// AFNetworking
+#define COCOAPODS_POD_AVAILABLE_AFNetworking
+#define COCOAPODS_VERSION_MAJOR_AFNetworking 1
+#define COCOAPODS_VERSION_MINOR_AFNetworking 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking 4
+
+// FormatterKit
+#define COCOAPODS_POD_AVAILABLE_FormatterKit
+#define COCOAPODS_VERSION_MAJOR_FormatterKit 1
+#define COCOAPODS_VERSION_MINOR_FormatterKit 7
+#define COCOAPODS_VERSION_PATCH_FormatterKit 0
+
+// FormatterKit/AddressFormatter
+#define COCOAPODS_POD_AVAILABLE_FormatterKit_AddressFormatter
+#define COCOAPODS_VERSION_MAJOR_FormatterKit_AddressFormatter 1
+#define COCOAPODS_VERSION_MINOR_FormatterKit_AddressFormatter 7
+#define COCOAPODS_VERSION_PATCH_FormatterKit_AddressFormatter 0
+
+// FormatterKit/ArrayFormatter
+#define COCOAPODS_POD_AVAILABLE_FormatterKit_ArrayFormatter
+#define COCOAPODS_VERSION_MAJOR_FormatterKit_ArrayFormatter 1
+#define COCOAPODS_VERSION_MINOR_FormatterKit_ArrayFormatter 7
+#define COCOAPODS_VERSION_PATCH_FormatterKit_ArrayFormatter 0
+
+// FormatterKit/ColorFormatter
+#define COCOAPODS_POD_AVAILABLE_FormatterKit_ColorFormatter
+#define COCOAPODS_VERSION_MAJOR_FormatterKit_ColorFormatter 1
+#define COCOAPODS_VERSION_MINOR_FormatterKit_ColorFormatter 7
+#define COCOAPODS_VERSION_PATCH_FormatterKit_ColorFormatter 0
+
+// FormatterKit/LocationFormatter
+#define COCOAPODS_POD_AVAILABLE_FormatterKit_LocationFormatter
+#define COCOAPODS_VERSION_MAJOR_FormatterKit_LocationFormatter 1
+#define COCOAPODS_VERSION_MINOR_FormatterKit_LocationFormatter 7
+#define COCOAPODS_VERSION_PATCH_FormatterKit_LocationFormatter 0
+
+// FormatterKit/NameFormatter
+#define COCOAPODS_POD_AVAILABLE_FormatterKit_NameFormatter
+#define COCOAPODS_VERSION_MAJOR_FormatterKit_NameFormatter 1
+#define COCOAPODS_VERSION_MINOR_FormatterKit_NameFormatter 7
+#define COCOAPODS_VERSION_PATCH_FormatterKit_NameFormatter 0
+
+// FormatterKit/OrdinalNumberFormatter
+#define COCOAPODS_POD_AVAILABLE_FormatterKit_OrdinalNumberFormatter
+#define COCOAPODS_VERSION_MAJOR_FormatterKit_OrdinalNumberFormatter 1
+#define COCOAPODS_VERSION_MINOR_FormatterKit_OrdinalNumberFormatter 7
+#define COCOAPODS_VERSION_PATCH_FormatterKit_OrdinalNumberFormatter 0
+
+// FormatterKit/TimeIntervalFormatter
+#define COCOAPODS_POD_AVAILABLE_FormatterKit_TimeIntervalFormatter
+#define COCOAPODS_VERSION_MAJOR_FormatterKit_TimeIntervalFormatter 1
+#define COCOAPODS_VERSION_MINOR_FormatterKit_TimeIntervalFormatter 7
+#define COCOAPODS_VERSION_PATCH_FormatterKit_TimeIntervalFormatter 0
+
+// FormatterKit/URLRequestFormatter
+#define COCOAPODS_POD_AVAILABLE_FormatterKit_URLRequestFormatter
+#define COCOAPODS_VERSION_MAJOR_FormatterKit_URLRequestFormatter 1
+#define COCOAPODS_VERSION_MINOR_FormatterKit_URLRequestFormatter 7
+#define COCOAPODS_VERSION_PATCH_FormatterKit_URLRequestFormatter 0
+
+// FormatterKit/UnitOfInformationFormatter
+#define COCOAPODS_POD_AVAILABLE_FormatterKit_UnitOfInformationFormatter
+#define COCOAPODS_VERSION_MAJOR_FormatterKit_UnitOfInformationFormatter 1
+#define COCOAPODS_VERSION_MINOR_FormatterKit_UnitOfInformationFormatter 7
+#define COCOAPODS_VERSION_PATCH_FormatterKit_UnitOfInformationFormatter 0
+
+// Google-AdMob-Ads-SDK
+#define COCOAPODS_POD_AVAILABLE_Google_AdMob_Ads_SDK
+#define COCOAPODS_VERSION_MAJOR_Google_AdMob_Ads_SDK 6
+#define COCOAPODS_VERSION_MINOR_Google_AdMob_Ads_SDK 12
+#define COCOAPODS_VERSION_PATCH_Google_AdMob_Ads_SDK 0
+
+// GoogleAnalytics-iOS-SDK
+#define COCOAPODS_POD_AVAILABLE_GoogleAnalytics_iOS_SDK
+#define COCOAPODS_VERSION_MAJOR_GoogleAnalytics_iOS_SDK 3
+#define COCOAPODS_VERSION_MINOR_GoogleAnalytics_iOS_SDK 0
+#define COCOAPODS_VERSION_PATCH_GoogleAnalytics_iOS_SDK 9
+
+// InflectorKit
+#define COCOAPODS_POD_AVAILABLE_InflectorKit
+#define COCOAPODS_VERSION_MAJOR_InflectorKit 0
+#define COCOAPODS_VERSION_MINOR_InflectorKit 0
+#define COCOAPODS_VERSION_PATCH_InflectorKit 1
+
+// MWFeedParser
+#define COCOAPODS_POD_AVAILABLE_MWFeedParser
+#define COCOAPODS_VERSION_MAJOR_MWFeedParser 1
+#define COCOAPODS_VERSION_MINOR_MWFeedParser 0
+#define COCOAPODS_VERSION_PATCH_MWFeedParser 1
+
+// MWFeedParser/FeedParser
+#define COCOAPODS_POD_AVAILABLE_MWFeedParser_FeedParser
+#define COCOAPODS_VERSION_MAJOR_MWFeedParser_FeedParser 1
+#define COCOAPODS_VERSION_MINOR_MWFeedParser_FeedParser 0
+#define COCOAPODS_VERSION_PATCH_MWFeedParser_FeedParser 1
+
+// MWFeedParser/NSDate+InternetDateTime
+#define COCOAPODS_POD_AVAILABLE_MWFeedParser_NSDate_InternetDateTime
+#define COCOAPODS_VERSION_MAJOR_MWFeedParser_NSDate_InternetDateTime 1
+#define COCOAPODS_VERSION_MINOR_MWFeedParser_NSDate_InternetDateTime 0
+#define COCOAPODS_VERSION_PATCH_MWFeedParser_NSDate_InternetDateTime 1
+
+// MWFeedParser/NSString+HTML
+#define COCOAPODS_POD_AVAILABLE_MWFeedParser_NSString_HTML
+#define COCOAPODS_VERSION_MAJOR_MWFeedParser_NSString_HTML 1
+#define COCOAPODS_VERSION_MINOR_MWFeedParser_NSString_HTML 0
+#define COCOAPODS_VERSION_PATCH_MWFeedParser_NSString_HTML 1
+
+// NSDate-Extensions
+#define COCOAPODS_POD_AVAILABLE_NSDate_Extensions
+#define COCOAPODS_VERSION_MAJOR_NSDate_Extensions 0
+#define COCOAPODS_VERSION_MINOR_NSDate_Extensions 0
+#define COCOAPODS_VERSION_PATCH_NSDate_Extensions 1
+
+// Quantcast-Measure
+#define COCOAPODS_POD_AVAILABLE_Quantcast_Measure
+#define COCOAPODS_VERSION_MAJOR_Quantcast_Measure 1
+#define COCOAPODS_VERSION_MINOR_Quantcast_Measure 4
+#define COCOAPODS_VERSION_PATCH_Quantcast_Measure 6
+
+// Quantcast-Measure/Core
+#define COCOAPODS_POD_AVAILABLE_Quantcast_Measure_Core
+#define COCOAPODS_VERSION_MAJOR_Quantcast_Measure_Core 1
+#define COCOAPODS_VERSION_MINOR_Quantcast_Measure_Core 4
+#define COCOAPODS_VERSION_PATCH_Quantcast_Measure_Core 6
+
+// TransformerKit
+#define COCOAPODS_POD_AVAILABLE_TransformerKit
+#define COCOAPODS_VERSION_MAJOR_TransformerKit 0
+#define COCOAPODS_VERSION_MINOR_TransformerKit 5
+#define COCOAPODS_VERSION_PATCH_TransformerKit 3
+
+// TransformerKit/Core
+#define COCOAPODS_POD_AVAILABLE_TransformerKit_Core
+#define COCOAPODS_VERSION_MAJOR_TransformerKit_Core 0
+#define COCOAPODS_VERSION_MINOR_TransformerKit_Core 5
+#define COCOAPODS_VERSION_PATCH_TransformerKit_Core 3
+
+// TransformerKit/Cryptography
+#define COCOAPODS_POD_AVAILABLE_TransformerKit_Cryptography
+#define COCOAPODS_VERSION_MAJOR_TransformerKit_Cryptography 0
+#define COCOAPODS_VERSION_MINOR_TransformerKit_Cryptography 5
+#define COCOAPODS_VERSION_PATCH_TransformerKit_Cryptography 3
+
+// TransformerKit/Data
+#define COCOAPODS_POD_AVAILABLE_TransformerKit_Data
+#define COCOAPODS_VERSION_MAJOR_TransformerKit_Data 0
+#define COCOAPODS_VERSION_MINOR_TransformerKit_Data 5
+#define COCOAPODS_VERSION_PATCH_TransformerKit_Data 3
+
+// TransformerKit/Date
+#define COCOAPODS_POD_AVAILABLE_TransformerKit_Date
+#define COCOAPODS_VERSION_MAJOR_TransformerKit_Date 0
+#define COCOAPODS_VERSION_MINOR_TransformerKit_Date 5
+#define COCOAPODS_VERSION_PATCH_TransformerKit_Date 3
+
+// TransformerKit/Image
+#define COCOAPODS_POD_AVAILABLE_TransformerKit_Image
+#define COCOAPODS_VERSION_MAJOR_TransformerKit_Image 0
+#define COCOAPODS_VERSION_MINOR_TransformerKit_Image 5
+#define COCOAPODS_VERSION_PATCH_TransformerKit_Image 3
+
+// TransformerKit/JSON
+#define COCOAPODS_POD_AVAILABLE_TransformerKit_JSON
+#define COCOAPODS_VERSION_MAJOR_TransformerKit_JSON 0
+#define COCOAPODS_VERSION_MINOR_TransformerKit_JSON 5
+#define COCOAPODS_VERSION_PATCH_TransformerKit_JSON 3
+
+// TransformerKit/String
+#define COCOAPODS_POD_AVAILABLE_TransformerKit_String
+#define COCOAPODS_VERSION_MAJOR_TransformerKit_String 0
+#define COCOAPODS_VERSION_MINOR_TransformerKit_String 5
+#define COCOAPODS_VERSION_PATCH_TransformerKit_String 3
+

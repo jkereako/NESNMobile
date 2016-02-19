@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  NESNMobile
+
+  Created by Jeff Kereakoglow on 3/14/14.
+  Copyright (c) 2014 New England Sports Network. All rights reserved.
+*/
+"Scores" = "Scores";
+"Articles" = "Articles";
+"External link query string format" = "?utm_source=nesniosapp&utm_medium=%@&utm_content=%@";
+"Live" = "Live";
+"NESN Mobile" = "NESN Mobile";
+"OK" = "Okay";
+"Error" = "Error";
+"Cancel" = "Cancel";
+"Open link in browser" = "Open link in browser";
+"Postponed" = "Postponed";
+"Top Stories" = "Top Stories";
+"General date format" = "E, MMM dd 'at' h:mma v";
+"Today date format" = "'Today at' h:mma v";
+"Tonight date format" = "'Tonight at' h:mma v";
+"Tomorrow date format" = "'Tomorrow at' h:mma v";
+"Pre-game score format" = "%@ at %@";
+"In-game score format" = "%@ (%u) at %@ (%u)";
+"STATS general date format" = "h:mm a MM/dd y";
+"STATS today date format" = "h:mm a";
+"STATS postponed" = "Ppnd";
